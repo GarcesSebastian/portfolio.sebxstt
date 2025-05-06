@@ -3,6 +3,8 @@ import "@/styles/globals.css";
 import { ParticleBackground } from "@/components/client/ParticleBackground";
 import Blob from "@/components/Blob";
 import Navbar from "@/components/server/Navbar";
+import { DataProvider } from "@/hooks/useData";
+import { SocketProvider } from "@/hooks/useSocket";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +23,11 @@ export default function RootLayout({
           <Blob />
           <ParticleBackground />
           <Navbar />
-          {children}
+          <SocketProvider>
+            <DataProvider>
+              {children}
+            </DataProvider>
+          </SocketProvider>
         </div>
       </body>
     </html>
