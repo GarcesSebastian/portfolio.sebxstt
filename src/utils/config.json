@@ -1,0 +1,306 @@
+{
+  "projects": [
+    {
+      "id": "parcify",
+      "title": {
+        "en": "Parcify",
+        "es": "Parcify"
+      },
+      "description": {
+        "en": "Multimedia collaboration platform that optimizes creative project management. Allows real-time synchronization, workspace customization, and performance tracking.",
+        "es": "Plataforma de colaboración multimedia que optimiza la gestión de proyectos creativos. Permite sincronización en tiempo real, personalización de espacios de trabajo y seguimiento de rendimiento."
+      },
+      "logo": "/parcify/logo.jpg",
+      "features": {
+        "en": [
+          "Real-time collaboration",
+          "Multimedia field customization", 
+          "Advanced search functionality",
+          "Performance metrics visualization",
+          "Real-time chat"
+        ],
+        "es": [
+          "Colaboración en tiempo real",
+          "Personalización de campos multimedia", 
+          "Funcionalidad de búsqueda avanzada",
+          "Visualización de métricas de rendimiento",
+          "Chat en tiempo real"
+        ]
+      },
+      "gallery": [
+        "/parcify/home.png",
+        "/parcify/index.png",
+        "/parcify/tools.png",
+        "/parcify/animator.png"
+      ],
+      "tags": ["Astro", "React", "TailwindCSS", "Node.js", "MySQL"],
+      "links": {
+        "github": "https://github.com/Parcify-Oficial/Parcify",
+        "live": "https://parcify.vercel.app"
+      }
+    },
+    {
+      "id": "easy-credit",
+      "title": {
+        "en": "EasyCredit",
+        "es": "EasyCredit"
+      },
+      "description": {
+        "en": "Interactive financial simulator to explore credit scenarios. Offers detailed simulations, secure transfers, and a financial gamification system.",
+        "es": "Simulador financiero interactivo para explorar escenarios crediticios. Ofrece simulaciones detalladas, transferencias seguras y sistema de gamificación financiera."
+      },
+      "logo": "/easycredit/logo.png",
+      "features": {
+        "en": [
+          "Credit simulation",
+          "Financial scenario evaluation",
+          "User-to-user transfers", 
+          "Two-factor authentication",
+          "Code redemption system"
+        ],
+        "es": [
+          "Simulación de créditos",
+          "Evaluación de escenarios financieros",
+          "Transferencias entre usuarios", 
+          "Autenticación de dos factores",
+          "Sistema de redención de códigos"
+        ]
+      },
+      "gallery": [
+        "https://github.com/GarcesSebastian/EasyCredit/raw/main/public/Captura%20de%20pantalla%20(204).png",
+        "https://github.com/GarcesSebastian/EasyCredit/raw/main/public/Captura%20de%20pantalla%20(206).png",
+        "https://github.com/GarcesSebastian/EasyCredit/raw/main/public/Captura%20de%20pantalla%20(204).png"
+      ],
+      "tags": ["Astro", "JavaScript", "Node.js", "MySQL", "TailwindCSS"],
+      "links": {
+        "github": "https://github.com/GarcesSebastian/EasyCredit",
+        "live": "#"
+      }
+    },
+    {
+      "id": "luminex",
+      "title": {
+        "en": "Luminex",
+        "es": "Luminex"
+      },
+      "description": {
+        "en": "Video processing platform with advanced thumbnail generation. Exports in multiple resolutions with optimized extraction and search algorithms.",
+        "es": "Plataforma de procesamiento de video con generación avanzada de miniaturas. Exporta en múltiples resoluciones con algoritmos optimizados de extracción y búsqueda."
+      },
+      "features": {
+        "en": [
+          "Efficient thumbnail generation",
+          "Video quality export (1080p, 720p, 480p, 360p)",
+          "Caching techniques for thumbnails",
+          "Optimized frame extraction method",
+          "Complex thumbnail search algorithm"
+        ],
+        "es": [
+          "Generación eficiente de miniaturas",
+          "Exportación de video en diferentes calidades (1080p, 720p, 480p, 360p)",
+          "Técnicas de caché para miniaturas",
+          "Método optimizado de extracción de fotogramas",
+          "Algoritmo complejo de búsqueda de miniaturas"
+        ]
+      },
+      "image": null,
+      "gallery": [],
+      "tags": ["React", "Next.js", "Node.js", "FFmpeg"],
+      "links": {
+        "github": "#",
+        "live": "#"
+      }
+    },
+    {
+      "id": "radial-js",
+      "title": {
+        "en": "Radial-JS",
+        "es": "Radial-JS"
+      },
+      "description": {
+        "en": "Canvas library for game and interactive graphics development. Offers tools for shape creation, physics simulations, and game development.",
+        "es": "Biblioteca de canvas para desarrollo de juegos y gráficos interactivos. Ofrece herramientas para creación de formas, simulaciones de física y desarrollo de juegos."
+      },
+      "features": {
+        "en": [
+          "Shape creation (Circle, Rectangle, Triangle, Line)",
+          "Interactive drag & drop support",
+          "Comprehensive event system",
+          "Visual effects (shadows, borders)",
+          "Precise bounding box calculations",
+          "Optimized performance",
+          "Physics simulations",
+          "Game development capabilities"
+        ],
+        "es": [
+          "Creación de formas (Círculo, Rectángulo, Triángulo, Línea)",
+          "Soporte de arrastrar y soltar interactivo",
+          "Sistema de eventos completo",
+          "Efectos visuales (sombras, bordes)",
+          "Cálculos precisos de cajas delimitadoras",
+          "Rendimiento optimizado",
+          "Simulaciones de física",
+          "Capacidades de desarrollo de juegos"
+        ]
+      },
+      "image": null,
+      "gallery": [],
+      "tags": ["TypeScript", "Canvas", "Game Development", "Physics Simulation"],
+      "links": {
+        "github": "#",
+        "live": "#"
+      },
+      "demos": {
+        "games": [
+          {
+            "title": {
+              "en": "Dark Shooter",
+              "es": "Tirador Oscuro"
+            },
+            "description": {
+              "en": "A fast-paced shooting game with particle effects and enemy AI",
+              "es": "Juego de disparos de ritmo rápido con efectos de partículas e IA de enemigos"
+            },
+            "icon": "🎮",
+            "difficulty": {
+              "en": "Advanced",
+              "es": "Avanzado"
+            },
+            "link": "#",
+            "technologies": ["Canvas"]
+          },
+          {
+            "title": {
+              "en": "Arkanoid Game",
+              "es": "Juego de Arkanoid"
+            },
+            "description": {
+              "en": "Classic brick-breaker with physics and power-ups",
+              "es": "Clásico juego de romper ladrillos con física y potenciadores"
+            },
+            "icon": "🕹️",
+            "difficulty": {
+              "en": "Intermediate",
+              "es": "Intermedio"
+            },
+            "link": "#",
+            "technologies": ["Canvas"]
+          },
+          {
+            "title": {
+              "en": "Cannon Ball",
+              "es": "Bola de Cañón"
+            },
+            "description": {
+              "en": "Simple cannon shooting game with gravity simulation",
+              "es": "Juego simple de disparo de cañón con simulación de gravedad"
+            },
+            "icon": "🎯",
+            "difficulty": {
+              "en": "Beginner",
+              "es": "Principiante"
+            },
+            "link": "#",
+            "technologies": ["Canvas"]
+          }
+        ],
+        "physics": [
+          {
+            "title": {
+              "en": "Shapes Physics System",
+              "es": "Sistema de Física de Formas"
+            },
+            "description": {
+              "en": "Interactive shapes with realistic physics simulation",
+              "es": "Formas interactivas con simulación física realista"
+            },
+            "icon": "⚡",
+            "difficulty": {
+              "en": "Advanced",
+              "es": "Avanzado"
+            },
+            "link": "https://sebxstt.vercel.app/",
+            "technologies": ["Canvas"]
+          },
+          {
+            "title": {
+              "en": "Radial Collisions",
+              "es": "Colisiones Radiales"
+            },
+            "description": {
+              "en": "Advanced radial collision detection system",
+              "es": "Sistema avanzado de detección de colisiones radiales"
+            },
+            "icon": "🔄",
+            "difficulty": {
+              "en": "Advanced",
+              "es": "Avanzado"
+            },
+            "link": "#",
+            "technologies": ["Canvas"]
+          },
+          {
+            "title": {
+              "en": "Rope Physics",
+              "es": "Física de Cuerdas"
+            },
+            "description": {
+              "en": "Realistic rope simulation using verlet integration",
+              "es": "Simulación realista de cuerdas usando integración de Verlet"
+            },
+            "icon": "🪢",
+            "difficulty": {
+              "en": "Expert",
+              "es": "Experto"
+            },
+            "link": "#",
+            "technologies": ["Canvas"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "health-pilot",
+      "title": {
+        "en": "HealthPilot",
+        "es": "HealthPilot"
+      },
+      "description": {
+        "en": "Application for hypertension patients. Offers blood pressure tracking, medication reminders, motivational assistant, and medical report generation.",
+        "es": "Aplicación para pacientes con hipertensión. Ofrece seguimiento de presión arterial, recordatorios de medicación, asistente motivacional y generación de informes médicos."
+      },
+      "logo": "/healthpilot/logo.png",
+      "features": {
+        "en": [
+          "Medication Reminders",
+          "Blood Pressure Tracking",
+          "Motivational Assistant",
+          "Hypertension Information",
+          "User Surveys",
+          "Personalized Notifications",
+          "Geolocation Services",
+          "Medical Data Storage",
+          "PDF Medical Report Generation"
+        ],
+        "es": [
+          "Recordatorios de Medicación",
+          "Seguimiento de Presión Arterial",
+          "Asistente Motivacional",
+          "Información sobre Hipertensión",
+          "Encuestas de Usuario",
+          "Notificaciones Personalizadas",
+          "Servicios de Geolocalización",
+          "Almacenamiento de Datos Médicos",
+          "Generación de Informes Médicos en PDF"
+        ]
+      },
+      "image": null,
+      "gallery": [],
+      "tags": ["PHP", "MySQL", "Apache", "JavaScript"],
+      "links": {
+        "github": "https://github.com/GarcesSebastian/DSI.github.io",
+        "live": "#"
+      }
+    }
+  ]
+}

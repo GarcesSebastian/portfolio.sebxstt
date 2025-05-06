@@ -1,0 +1,76 @@
+{
+    "navbar": {
+      "logo": "Sebxstt",
+      "projects": {
+        "en": "Projects",
+        "es": "Proyectos"
+      },
+      "skills": {
+        "en": "Skills", 
+        "es": "Habilidades"
+      },
+      "contact": {
+        "en": "Contact",
+        "es": "Contacto"
+      },
+      "letsTalk": {
+        "en": "Let's Talk",
+        "es": "Contáctame"
+      },
+      "languages": {
+        "en": "English",
+        "es": "Español"
+      }
+    },
+    "hero": {
+      "name": "SEBASTIAN GARCES",
+      "availability": {
+        "available": {
+            "en": "Available for Work",
+            "es": "Disponible para Trabajar"
+        },
+        "unavailable": {
+            "en": "Not Available for Work",
+            "es": "No Disponible para Trabajar"
+        }
+      },
+      "title": {
+        "en": "Full Stack",
+        "es": "Desarrollador Web"
+      },
+      "subtitle": {
+        "en": "Web Developer",
+        "es": "Full Stack"
+      },
+      "description": {
+        "en": "Passionate about creating innovative web solutions that solve real-world problems. Experienced in hackathons and marathons, specializing in developing efficient algorithms and transformative digital products.",
+        "es": "Apasionado por crear soluciones web innovadoras que resuelven problemas del mundo real. Experimentado en hackathons y maratones, especializado en desarrollar algoritmos eficientes y productos digitales transformadores."
+      },
+      "skills": {
+        "backend": {
+          "en": "Backend",
+          "es": "Backend"
+        },
+        "frontend": {
+          "en": "Frontend", 
+          "es": "Frontend"
+        },
+        "database": {
+          "en": "Database",
+          "es": "Base de Datos"
+        },
+        "problemSolving": {
+          "en": "Problem Solving",
+          "es": "Resolución de Problemas"
+        }
+      },
+      "experience": {
+        "years": "Years Experience",
+        "yearsEs": "Años de Experiencia"
+      },
+      "projects": {
+        "completed": "Projects Completed",
+        "completedEs": "Proyectos Completados"
+      }
+    }
+  }

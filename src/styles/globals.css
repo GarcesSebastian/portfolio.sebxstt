@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-light;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 text-gray-custom hover:text-primary transition-colors duration-300;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-dark font-semibold rounded-full 
+           hover:bg-opacity-90 transition-all duration-300
+           border-2 border-primary hover:border-opacity-50;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-display font-bold mb-6 text-primary;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-light bg-clip-text text-transparent;
+  }
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at center, rgba(0, 209, 178, 0.15) 0%, rgba(15, 15, 26, 0) 70%);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/30 transition-colors;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
