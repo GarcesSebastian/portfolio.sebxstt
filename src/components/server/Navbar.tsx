@@ -2,25 +2,17 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Code, Globe } from 'lucide-react';
+import { Menu, X, Code } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
-  const [language, setLanguage] = useState('en');
 
   const navLinks = [
     { label: 'Proyectos', href: '#projects' },
     { label: 'Habilidades', href: '#skills' },
     { label: 'Contacto', href: '#contact' }
   ];
-
-  const languageLabels = {
-    en: 'Inglés',
-    es: 'Español'
-  };
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,45 +77,6 @@ const Navbar: React.FC = () => {
                 {link.label}
               </motion.a>
             ))}
-
-            <div className="relative">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
-                className="flex items-center space-x-2 text-gray-custom hover:text-primary transition-colors duration-300"
-              >
-                <Globe className="w-5 h-5" />
-                <span>{languageLabels[language as keyof typeof languageLabels]}</span>
-              </motion.button>
-
-              <AnimatePresence>
-                {isLanguageDropdownOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute right-0 mt-2 w-40 bg-white dark:bg-dark/80 backdrop-blur-md rounded-lg shadow-lg border border-primary/10"
-                  >
-                    {Object.entries(languageLabels)
-                      .filter(([key]) => key !== language)
-                      .map(([key, label]) => (
-                        <motion.button
-                          key={key}
-                          onClick={() => {
-                            setLanguage(key)
-                            setIsLanguageDropdownOpen(false)
-                          }}
-                          whileHover={{ backgroundColor: 'rgba(0,0,0,0.05)' }}
-                          className="w-full text-left px-4 py-2 hover:bg-primary/5 transition-colors duration-300"
-                        >
-                          {label}
-                        </motion.button>
-                      ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
             
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -163,31 +116,6 @@ const Navbar: React.FC = () => {
                     {link.label}
                   </a>
                 ))}
-                
-                <div className="flex items-center space-x-2">
-                  <Globe className="w-5 h-5 text-gray-custom" />
-                  <div className="flex space-x-2">
-                    {Object.entries(languageLabels)
-                      .map(([key, label]) => (
-                        <button
-                          key={key}
-                          onClick={() => {
-                            setLanguage(key);
-                            setIsMenuOpen(false);
-                          }}
-                          className={`
-                            text-sm font-medium transition-colors duration-300
-                            ${language === key 
-                              ? 'text-primary' 
-                              : 'text-gray-custom hover:text-primary'
-                            }
-                          `}
-                        >
-                          {label}
-                        </button>
-                      ))}
-                  </div>
-                </div>
                 
                 <button
                   className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium 

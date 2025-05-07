@@ -4,6 +4,7 @@ import { Experience } from "@/types/Experiences";
 import { Project } from "@/types/Projects";
 import { Service } from "@/types/Services";
 import { Skill } from "@/types/Skills";
+import { User } from "@/types/User";
 import { Testimonial } from "@/types/Testimonials";
 import { useState, createContext, ReactNode, useContext, useEffect } from "react";
 
@@ -13,6 +14,7 @@ type Data = {
     services: Service[],
     skills: Skill[],
     testimonials: Testimonial[],
+    user: User,
 }
 
 type DataContextType = {
@@ -31,7 +33,24 @@ export const useData = () => {
     return context;
 }
 
+const userDefault: User = {
+    id: "",
+    name: "",
+    email: "",
+    is_active: false,
+    years_experience: 0,
+    avatar: "",
+    description: "",
+    location: "",
+    social: {
+        linkedin: "",
+        github: "",
+    },
+    skills: [],
+}
+
 const DataDefault: Data = {
+    user: userDefault,
     projects: [],
     experiences: [],
     services: [],
