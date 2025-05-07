@@ -1,22 +1,43 @@
 export type Project = {
     id: string;
-    title: string;
-    description: string;
+    title: {
+        es: string;
+        en: string;
+    };
+    description: {
+        es: string;
+        en: string;
+    };
     logo: string;
     gallery: string[];
-    features: string[];
-    demos: { games: Demo[], physics: Demo[] };
+    features: {
+        es: string[];
+        en: string[];
+    };
+    demos: {
+        games: Demo[];
+        physics: Demo[];
+    };
     links: { github: string, live: string };
     technologies: string[];
     tags: string[];
 }
 
 export type Demo = {
-    title: string;
-    description: string;
+    title: {
+        es: string;
+        en: string;
+    };
+    description: {
+        es: string;
+        en: string;
+    };
     type: string;
     icon: string;
-    difficulty: string;
+    difficulty: {
+        es: string;
+        en: string;
+    };
     link: string;
     technologies: string[];
 }
