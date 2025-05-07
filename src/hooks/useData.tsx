@@ -62,7 +62,7 @@ export const DataProvider = ({ children }: { children: ReactNode }) => {
     const [data, setData] = useState<Data>(DataDefault);
 
     const fetchData = async () => {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/data`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users`, {
             method: "GET",
             headers: {
                 "content-type": "application/json"
